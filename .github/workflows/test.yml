@@ -18,5 +18,5 @@ jobs:
       run: |
         npm install -g snyk
 	npm install
-	DEBUG=needle,snyk:req snyk test
-
+	snyk test
+	# DEBUG=needle,snyk:req snyk test
