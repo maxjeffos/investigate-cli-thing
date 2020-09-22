@@ -15,8 +15,6 @@ jobs:
         node-version: 12
 
     - name: Try CLI
-      env:
-      	DEBUG: "needle,snyk:req"  
       run: |
         npm install -g snyk
 	npm install
