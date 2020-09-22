@@ -16,7 +16,7 @@ jobs:
 
     - name: Try CLI
       env:
-        SNYK_TOKEN: GITHUB_TOKEN: ${{ secrets.SNYK_TOKEN }} 
+        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }} 
       run: |
         npm install -g snyk
         npm install
