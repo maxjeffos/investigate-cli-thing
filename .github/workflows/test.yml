@@ -24,13 +24,37 @@ jobs:
       run: 
         npm install
 
-    - name: Try CLI
+    - name: Try CLI 1
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }} 
         DEBUG: "needle,snyk:req" 
       run: |
         snyk test
+
+    - name: Try CLI 2
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }} 
+        DEBUG: "needle,snyk:req" 
+      run: |
         snyk test
+
+    - name: Try CLI 3
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }} 
+        DEBUG: "needle,snyk:req" 
+      run: |
         snyk test
+
+    - name: Try CLI 4
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }} 
+        DEBUG: "needle,snyk:req" 
+      run: |
         snyk test
+
+    - name: Try CLI 5
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }} 
+        DEBUG: "needle,snyk:req" 
+      run: |
         snyk test
