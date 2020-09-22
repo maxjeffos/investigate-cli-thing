@@ -14,10 +14,17 @@ jobs:
       with:
         node-version: 12
 
+    - name: Install CLI
+      run: |
+        npm install -g snyk
+
+    - name: Install Deps
+      run: 
+        npm install
+
     - name: Try CLI
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }} 
+        DEBUG: "needle,snyk:req" 
       run: |
-        npm install -g snyk
-        npm install
         snyk test
