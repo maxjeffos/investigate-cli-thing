@@ -28,20 +28,23 @@ jobs:
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }} 
         DEBUG: "needle,snyk:req" 
+        SNYK_INTEGRATION_NAME: "TEST" 
       run: |
         snyk test
 
     - name: Try CLI 2
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }} 
-        DEBUG: "needle,snyk:req" 
+        DEBUG: "needle,snyk:req"
+        SNYK_INTEGRATION_NAME: "TEST" 
       run: |
         snyk test
 
     - name: Try CLI 3
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }} 
-        DEBUG: "needle,snyk:req" 
+        DEBUG: "needle,snyk:req"
+        SNYK_INTEGRATION_NAME: "TEST" 
       run: |
         snyk test
 
@@ -49,12 +52,14 @@ jobs:
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }} 
         DEBUG: "needle,snyk:req" 
+        SNYK_INTEGRATION_NAME: "TEST" 
       run: |
         snyk test
 
     - name: Try CLI 5
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }} 
-        DEBUG: "needle,snyk:req" 
+        DEBUG: "needle,snyk:req"
+        SNYK_INTEGRATION_NAME: "TEST" 
       run: |
         snyk test
