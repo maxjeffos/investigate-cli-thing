@@ -17,5 +17,5 @@ jobs:
     - name: Try CLI
       run: |
         npm install -g snyk
-	npm install
-	snyk test
+        npm install
+        snyk test
